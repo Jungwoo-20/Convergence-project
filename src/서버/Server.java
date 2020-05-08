@@ -71,7 +71,7 @@ class ConnectionWrap implements Runnable {
 
 			// DB connection
 			Class.forName("com.mysql.jdbc.Driver");
-			Connection conn = DriverManager.getConnection("jdbc:mysql://localhost:3306/dormitory", "root", "5437");
+			Connection conn = DriverManager.getConnection("local", "root", "password");
 
 			// 서버처리담당객체생성
 			LOGIN_HANDLER login_handler = new LOGIN_HANDLER(input, output, conn);
